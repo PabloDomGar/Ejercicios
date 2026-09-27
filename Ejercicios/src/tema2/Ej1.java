@@ -77,12 +77,12 @@ public class Ej1 {
 	
 	public static void main (String [] args) {
 		
-		Carpeta Uni = new Carpeta("Uni");
+		Carpeta uni = new Carpeta("Uni");
 			
-			Uni.creaArchivo("Notas",1);
+			uni.creaArchivo("Notas",1);
 			
-			Carpeta matricula = Uni.creaCarpeta("Matricula");
-			Uni.añadeCarpeta(matricula);
+			Carpeta matricula = uni.creaCarpeta("Matricula");
+			uni.añadeCarpeta(matricula);
 			
 				matricula.creaArchivo("recibo", 2);
 				
@@ -91,10 +91,18 @@ public class Ej1 {
 					
 					asignaturas.creaArchivo("ALED", 12);
 				
-			Uni.creaCarpeta("Erasmus");
+			Carpeta erasmus = uni.creaCarpeta("Erasmus");
+			uni.añadeCarpeta(erasmus);
+			erasmus.creaArchivo("Destinos", 3);
+			erasmus.creaArchivo("Notas", 4);
+				
+				Carpeta programas = new Carpeta ("Programas");
+				erasmus.añadeCarpeta(programas);
+				programas.creaArchivo("Austria", 1);
+				programas.creaArchivo("Alemania", 2);
 				
 			
-		System.out.println(calcularPesoTotal(Uni));
+		System.out.println(calcularPesoTotal(uni));
 			
 		
 		
