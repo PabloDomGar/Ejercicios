@@ -1,3 +1,4 @@
+package tema1;
 import java.util.Random;
 import java.util.Arrays;
 
