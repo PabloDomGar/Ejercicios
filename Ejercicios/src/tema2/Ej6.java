@@ -20,7 +20,7 @@ public class Ej6 {
 	}
 	public static void main(String[] args) {
 		
-		System.out.println(esPalindromo("guauuuesufsef"));
+		System.out.println(esPalindromo("aahohaa"));
 
 	}
 
